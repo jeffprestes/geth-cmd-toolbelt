@@ -21,12 +21,12 @@ geth --datadir /Users/thunderbolt/myproject account new
 
 ## Starting a node only accepting local connections
 ```bash
-geth --datadir "<<your local directory to host ethnode>>" --networkid="<<>>" --ws --wsaddr "127.0.0.1" --rpc --rpcaddr "127.0.0.1" --rpccorsdomain "*" --wsapi "admin,eth,debug,miner,net,txpool,personal,web3" --rpcapi "admin,eth,debug,miner,net,txpool,personal,web3" --graphql --graphql.addr "127.0.0.1"
+geth --datadir "<<your local directory to host ethnode>>" --networkid="<<>>" --ws --wsaddr "127.0.0.1" --rpc --rpcaddr "127.0.0.1" --rpccorsdomain "*" --wsapi "admin,eth,debug,miner,net,txpool,personal,web3" --rpcapi "admin,eth,debug,miner,net,txpool,personal,web3" --graphql --graphql.addr "127.0.0.1" --graphql.corsdomain "*"
 ```
 
 ### Example
 ```bash
-geth --datadir "/Users/thundebolt/myproject" --networkid="15" --ws --wsaddr "127.0.0.1" --rpc --rpcaddr "127.0.0.1" --rpccorsdomain "*" --wsapi "admin,eth,debug,miner,net,txpool,personal,web3" --rpcapi "admin,eth,debug,miner,net,txpool,personal,web3" --graphql --graphql.addr "127.0.0.1"
+geth --datadir "/Users/thundebolt/myproject" --networkid="15" --ws --wsaddr "127.0.0.1" --rpc --rpcaddr "127.0.0.1" --rpccorsdomain "*" --wsapi "admin,eth,debug,miner,net,txpool,personal,web3" --rpcapi "admin,eth,debug,miner,net,txpool,personal,web3" --graphql --graphql.addr "127.0.0.1" --graphql.corsdomain "*"
 ```
 
 ## Connecting to the node via terminal
