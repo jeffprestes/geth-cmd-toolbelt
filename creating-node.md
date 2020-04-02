@@ -1,4 +1,4 @@
-#Creating GETH node to a Private Testing Ethereum Network
+# Creating GETH node to a Private Testing Ethereum Network
 
 ## Creating the datadir
 ```bash
